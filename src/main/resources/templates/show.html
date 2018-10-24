@@ -6,11 +6,14 @@
 </head>
 <body>
 
-<a href="/">Show All Course</a><br>
-Title:<span th:text="${course.title}"></span><br>
-Instructor:<span th:text="${course.instructor}"></span><br>
-Description:<p th:text="${course.description}"></p><br>
-Credit:<span th:text="${credit.title}"></span><br>
+<a href="/">Show All Course</a><br/>
+
+
+
+Title:<span th:text="${course.title}" ></span><br/>
+Instructor:<span th:text="${course.instructor}"></span><br/>
+Description:<p th:text="${course.description}"></p><br/>
+Credit:<span th:text="${credit.title}"></span><br/>
 
 <a th:href="@{/delete/{id}(id=${course.id})}"> Delete this course</a>
 
