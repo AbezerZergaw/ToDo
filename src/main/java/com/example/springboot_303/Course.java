@@ -26,12 +26,22 @@ public class Course {
     private String instructor;
 
     @NotNull
-    @Size(min=10)
+    @Size(min=5)
     private String description;
 
     @NotNull
     @Min(3)
     private int credit;
+
+    public Course() {
+    }
+
+    public Course(String title, String instructor, String description, int credit) {
+        this.title = title;
+        this.instructor = instructor;
+        this.description = description;
+        this.credit = credit;
+    }
 
     public long getId() {
         return id;
